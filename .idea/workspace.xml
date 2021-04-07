@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e44f0e3d-e09a-41d3-8a67-b058156d1957" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/expresions_aritmetiques/Log.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/expresions_aritmetiques/Log.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/expresions_aritmetiques/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/expresions_aritmetiques/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/expresions_aritmetiques/Power.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/expresions_aritmetiques/Power.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Log.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Power.java" afterDir="false" />
     </list>

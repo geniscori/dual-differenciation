@@ -4,11 +4,11 @@ import java.lang.reflect.Executable;
 public class Main {
 
     private static double f(double x){
-        return Math.log(Math.pow(x,3));
+        return Math.pow(x,x);
         //return Math.sin(Math.cos(x));
     }
     private static double df(double x){
-        return Math.cos(Math.PI/2.0 + x*x)*2*x;
+        return Math.pow(x,x)*(Math.log(x)+1);
         //return -Math.cos(Math.cos(x))*Math.sin(x);
     }
 
@@ -17,7 +17,7 @@ public class Main {
         //Expression expr = new Sin(new Add(new Constant(Math.PI/2.0), new Multiply(x,x)));
         //Expression expr = new Add(new Constant(6), new X());
         //Expression expr = new Sin(new Cos(new X()));
-        Expression expr = new Log( new Power(x,3),new Constant(Math.E));
+        Expression expr = new Power(x,x);
         double x0 = 1.57;
         DualNumber res = expr.evaluate(new DualNumber(x0, 0.001));
         double valorReal = f(x0);
