@@ -5,29 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e44f0e3d-e09a-41d3-8a67-b058156d1957" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expresions_aritmetiques.iml" beforeDir="false" afterPath="$PROJECT_DIR$/expresions_aritmetiques.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArithmeticExpression.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BinaryOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryOperator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Division.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/expresions_aritmetiques/Log.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/expresions_aritmetiques/Log.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/expresions_aritmetiques/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/expresions_aritmetiques/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/expresions_aritmetiques/Power.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/expresions_aritmetiques/Power.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Log.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Subtract.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arithmeticExpressions.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arithmeticExpressions2.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arithmeticExpressions_examen.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Power.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

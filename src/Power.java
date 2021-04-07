@@ -1,10 +1,10 @@
 import java.lang.Math;
 public class Power implements Expression {
 
-    DualNumber x;
-    int exp;
+    Expression x;
+    double exp;
 
-    public Power(DualNumber x, int exp){
+    public Power(Expression x, double exp){
         this.x = x;
         this.exp = exp;
 
