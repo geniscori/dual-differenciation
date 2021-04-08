@@ -1,23 +1,28 @@
+import kotlin.reflect.jvm.internal.impl.descriptors.DescriptorVisibilities;
+import visitor.Sum;
+
 import java.lang.Math;
 import java.lang.reflect.Executable;
 
 public class Main {
 
     private static double f(double x){
-        return Math.pow(x,x);
+        return Math.pow(x,2)-Math.log(2*x);
         //return Math.sin(Math.cos(x));
     }
     private static double df(double x){
-        return Math.pow(x,x)*(Math.log(x)+1);
+        return 2*x -1/x;
+
         //return -Math.cos(Math.cos(x))*Math.sin(x);
     }
 
     public static void main(String[] args){
         Expression x = new X();
+        Expression expr = new Substract(new Power(x,2),new Log(new Multiply(new Constant(2),x),Math.E));
         //Expression expr = new Sin(new Add(new Constant(Math.PI/2.0), new Multiply(x,x)));
-        //Expression expr = new Add(new Constant(6), new X());
+        //Expression expr = new Divide(x,new Add(x,new Constant(1)));
         //Expression expr = new Sin(new Cos(new X()));
-        Expression expr = new Power(x,x);
+        //Expression expr = new Cos(new Log(new Cos(new Power (x,new Add(x,new Constant(1)))),new Constant(Math.E)));
         double x0 = 1.57;
         DualNumber res = expr.evaluate(new DualNumber(x0, 0.001));
         double valorReal = f(x0);
