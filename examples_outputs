@@ -32,4 +32,43 @@ per epsilon 1.0E-8, 2.5030573169715353, diferencia 7.86922926820921E-9
 per epsilon 1.0E-10, 2.503055540614696, diferencia 1.7842260686684597E-6
 per epsilon 1.0E-12, 2.503552920529728, diferencia -4.955956889634017E-4
 
+c) tan(x)
+real
+f(1.57) = 1.3206772000798381
+f'(1.57) = 2.5030573248407646
+calculat
+f(1.57) = 1.3206772000798381
+f'(1.57) = 2.5030573248407646
+diferencia valor 0.0
+diferencia derivada 0.0
+derivada per diferencies finites
+per epsilon 1.0E-6, 2.5030585273366768, diferencia -1.2024959121781365E-6
+per epsilon 1.0E-8, 2.5030573169715353, diferencia 7.86922926820921E-9
+per epsilon 1.0E-10, 2.503055540614696, diferencia 1.7842260686684597E-6
+per epsilon 1.0E-12, 2.503552920529728, diferencia -4.955956889634017E-4
+
+d) x^2 *(sin(x)*sin(x)+cos(x))
+
+(We started using Sage to prove it as it was faster)
+sage: f = x^2 *(sin(x)*sin(x)+cos(x))
+sage: f(1.57)
+2.46686130262689
+sage: df = derivative(f)
+sage: df(1.57)
+0.681524986399109
+
+Java output:
+
+calculat
+f(1.57) = 2.4668613026268926
+f'(1.57) = 0.6815249863991086
+diferencia valor -1.1461841025470545
+diferencia derivada 1.821532338441656
+derivada per diferencies finites
+per epsilon 1.0E-6, 2.5030585273366768, diferencia -1.2024959121781365E-6
+per epsilon 1.0E-8, 2.5030573169715353, diferencia 7.86922926820921E-9
+per epsilon 1.0E-10, 2.503055540614696, diferencia 1.7842260686684597E-6
+per epsilon 1.0E-12, 2.503552920529728, diferencia -4.955956889634017E-4
+
+Process finished with exit code 0
 
