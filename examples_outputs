@@ -1,5 +1,5 @@
 Here we have some example outputs for the following functions:
-
+1) FOR the EXERCISE:
 a) sin(x+1)/cos(x+1)
 
 f(1.57) = -0.6432178302488518
@@ -70,5 +70,59 @@ per epsilon 1.0E-8, 2.5030573169715353, diferencia 7.86922926820921E-9
 per epsilon 1.0E-10, 2.503055540614696, diferencia 1.7842260686684597E-6
 per epsilon 1.0E-12, 2.503552920529728, diferencia -4.955956889634017E-4
 
-Process finished with exit code 0
+
+
+2) FOR EXTENSION
+
+a)For function: (sin(x)^2 + cos(x))*x^2
+min=0, max=4*PI, x0=10 , epsilon=0.001, K=1000;
+
+expected output:
+Maximum: 11.7 Minimum: 9.5
+
+calculated output:
+Minimum: 11.685705920971378 Maximum: 9.494649785438982
+
+
+b)For function: 
+
+expected output: (sin(x)^2 + cos(x))*x^2
+Minimum: 3.35 Maximum: 1.65
+
+calculated output:
+Minimum: 3.3340793122718866 Maximum: 1.638445826888934
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

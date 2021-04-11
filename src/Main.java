@@ -1,4 +1,5 @@
 import kotlin.reflect.jvm.internal.impl.descriptors.DescriptorVisibilities;
+import kotlin.reflect.jvm.internal.impl.resolve.constants.NullValue;
 import visitor.Sum;
 
 import java.lang.Math;
@@ -16,31 +17,41 @@ public class Main {
         //return -Math.cos(Math.cos(x))*Math.sin(x);
     }
 
-    private static Double[] extension(Expression function, double xmin, double xmax, double x0, double epsilon, int K){
-        double xk = x0, max=Double.NaN, min=Double.NaN;
+    private static Double[] extension(Expression function, double xmin, double xmax, double x0, double epsilon, int K) {
+        double  x0min = x0, x0max = x0;
+        Double max = null , min = null;
 
-        for(int i=0;i<K; i++) {
+        assert xmin > x0 && xmax < x0 : "x0 is not inside interval";
+        for (int i = 0; i < K; i++) {
             // finding the minimum
-            DualNumber res = function.evaluate(new DualNumber(xk, epsilon));
-            min = xk + res.uprime * epsilon;
-            xk = min;
+            if (xmin <= x0min && x0min <= xmax) {
+                DualNumber res = function.evaluate(new DualNumber(x0min, epsilon));
+                min = x0min + res.uprime * epsilon;
 
-            if (res.uprime == 0) break;
-            else min=Double.NaN;
+                if (x0min == min) {
+                    break;
+                }
+                x0min = min;
+            } else {
+                break;
+            }
         }
-        for(int i=0;i<K; i++) {
-            //finding the maximum
-            DualNumber res2 = function.evaluate(new DualNumber(x0, epsilon));
-            max = xk - res2.uprime * epsilon;
-            x0 = max;
+        for (int i = 0; i < K; i++) {
+            // finding the minimum
+            if (xmin <= x0max && x0max <= xmax) {
+                DualNumber res = function.evaluate(new DualNumber(x0max, epsilon));
+                max = x0max - res.uprime * epsilon;
 
-            if (res2.uprime == 0) break;
-            else max=Double.NaN;
+                if (x0max == max) {
+                    break;
+                }
+                x0max = max;
+            } else {
+                break;
+            }
         }
-
-        return new Double[]{min,max};
+        return new Double[]{max, min};
     }
-
     public static void main(String[] args){
         Expression x = new X();
         //Expression expr = new Substract(new Power(x,2),new Log(new Multiply(new Constant(2),x),Math.E));

@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e44f0e3d-e09a-41d3-8a67-b058156d1957" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Tan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples_outputs" beforeDir="false" afterPath="$PROJECT_DIR$/examples_outputs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/expresions_aritmetiques/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/expresions_aritmetiques/Main.class" afterDir="false" />
