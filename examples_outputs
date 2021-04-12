@@ -84,9 +84,10 @@ calculated output:
 Minimum: 11.685705920971378 Maximum: 9.494649785438982
 
 
-b)For function: 
+b)For function: (sin(x)^2 + cos(x))*x^2
+min=0, max=4*PI, x0=2 , epsilon=0.001, K=1000;
 
-expected output: (sin(x)^2 + cos(x))*x^2
+expected output: 
 Minimum: 3.35 Maximum: 1.65
 
 calculated output:
