@@ -26,7 +26,7 @@ public class Main {
             // finding the minimum
             if (xmin <= x0min && x0min <= xmax) {
                 DualNumber res = function.evaluate(new DualNumber(x0min, epsilon));
-                min = x0min + res.uprime * epsilon;
+                min = x0min - res.uprime * epsilon;
 
                 if (x0min == min) {
                     break;
@@ -40,7 +40,7 @@ public class Main {
             // finding the minimum
             if (xmin <= x0max && x0max <= xmax) {
                 DualNumber res = function.evaluate(new DualNumber(x0max, epsilon));
-                max = x0max - res.uprime * epsilon;
+                max = x0max + res.uprime * epsilon;
 
                 if (x0max == max) {
                     break;
@@ -50,7 +50,7 @@ public class Main {
                 break;
             }
         }
-        return new Double[]{max, min};
+        return new Double[]{min, max};
     }
     public static void main(String[] args){
         Expression x = new X();
