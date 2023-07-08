@@ -6,15 +6,13 @@ import java.lang.Math;
 import java.lang.reflect.Executable;
 
 public class Main {
-
+    // to validate the mehtod
     private static double f(double x){
-        return Math.pow(x,2)-Math.log(2*x);
-        //return Math.sin(Math.cos(x));
+        return Math.pow(x,2)*(Math.pow(Math.sin(x),2) + Math.cos(x));
     }
-    private static double df(double x){
-        return 2*x -1/x;
 
-        //return -Math.cos(Math.cos(x))*Math.sin(x);
+    private static double df(double x){
+        return 2*x*(Math.pow(Math.sin(x),2)+Math.cos(x))+Math.pow(x,2)*(2*Math.sin(x)*Math.cos(x)-Math.sin(x));
     }
 
     private static Double[] extension(Expression function, double xmin, double xmax, double x0, double epsilon, int K) {
@@ -52,13 +50,13 @@ public class Main {
         }
         return new Double[]{min, max};
     }
+
     public static void main(String[] args){
         Expression x = new X();
-        //Expression expr = new Substract(new Power(x,2),new Log(new Multiply(new Constant(2),x),Math.E));
-        //Expression expr = new Sin(new Add(new Constant(Math.PI/2.0), new Multiply(x,x)));
-        //Expression expr = new Divide(x,new Add(x,new Constant(1)));
+        // test with expression
         Expression expr = new Multiply(new Power(x,2),new Add(new Power(new Sin(x),2),new Cos(x)));
-        //Expression expr = new Cos(new Log(new Cos(new Power (x,new Add(x,new Constant(1)))),new Constant(Math.E)));
+
+        // x0 is a test parameter
         double x0 = 1.57;
         DualNumber res = expr.evaluate(new DualNumber(x0, 0.001));
         double valorReal = f(x0);
@@ -82,9 +80,9 @@ public class Main {
 
         System.out.println("derivada per diferencies finites");
         final double[] epsilons = {1e-6, 1e-8, 1e-10, 1e-12};
-        for (int i=0; i<epsilons.length; i++) {
-            double derivadaDifFinites = (f(x0+epsilons[i])-f(x0)) / epsilons[i];
-            System.out.println("per epsilon "+epsilons[i] + ", "+derivadaDifFinites+", " + "diferencia " + (derivadaReal - derivadaDifFinites));
+        for (double v : epsilons) {
+            double derivadaDifFinites = (f(x0 + v) - f(x0)) / v;
+            System.out.println("per epsilon " + v + ", " + derivadaDifFinites + ", " + "diferencia " + (derivadaReal - derivadaDifFinites));
         }
     }
 }
